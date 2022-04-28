@@ -1,10 +1,9 @@
 import { AlertService } from "./alertService.js";
-import { authErrors } from "../constants/messages/authMessages";
+import { authErrors, tables_success } from "../constants/messages/authMessages";
 import tableService from "../api/tables";
 
 export function createTable(history, values) {
-    var model = {
-        id: "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    let model = {
         name: values.name,
         goal: values.goal,
         image: values.image,
@@ -15,10 +14,11 @@ export function createTable(history, values) {
         .createTable(model)
         .then(
             () => {
-                AlertService.successMessage(authErrors.REGISTRATION_SUCCESS);
+                AlertService.successMessage(tables_success.TABLE_CREATED);
                 history.push("/main");
             },
             (err) => {
+                console.log(err);
                 err.response.status === 400
                     ? AlertService.errorMessage(err)
                     : AlertService.errorMessage(err);

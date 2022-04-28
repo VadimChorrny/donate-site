@@ -14,7 +14,6 @@ export default function CreateTablePage() {
 
     const onFinish = (values) => {
         createTable(history, values);
-        console.log(values);
     };
     const onFinishFailed = () => {
         AlertService.errorMessage(

@@ -12,3 +12,6 @@ export const authErrors = Object.freeze({
 
     SOMETHING_WENT_WRONG: "Something went wrong, try again!",
 });
+export const tables_success = Object.freeze({
+    TABLE_CREATED: "Table is succefully created!",
+});
