@@ -24,8 +24,8 @@ export default function LoginPage() {
     return (
         <div className={"authBody"}>
             <div className={"center"}>
-                <p className={"title"}>Logistman</p>
-                <p>Sign in and start managing your offers!</p>
+                <p className={"title"}>Donate-Site</p>
+                <p>Sign in and start managing your table!</p>
 
                 <Form
                     className={"form"}
