@@ -129,7 +129,8 @@ export default function RegistrationPage() {
                             },
                         ]}
                     >
-                        <Input.Password
+                        <Input
+                            type="password"
                             className={"passwordInput"}
                             placeholder="Password"
                         />
@@ -160,7 +161,8 @@ export default function RegistrationPage() {
                             }),
                         ]}
                     >
-                        <Input.Password
+                        <Input
+                            type="password"
                             className={"passwordInput"}
                             placeholder="Confirm password"
                         />

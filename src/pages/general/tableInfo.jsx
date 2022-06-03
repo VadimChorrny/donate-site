@@ -21,10 +21,10 @@ export default function TableInfo(props) {
         <div className="table-info__container">
             <Header />
             <div className="table-info__wrapper">
-                <h2>Name: {data.name}</h2>
-                <p>Descrybe: {data.describe}</p>
+                <h2>{data.name}</h2>
+                <p><strong>Опис:</strong> {data.describe}</p>
+                <span id="price"><strong>Ціна:</strong> {data.price}</span>
                 <img src={data.image} alt="image" />
-                <span>Price: {data.price}</span>
             </div>
         </div>
     );

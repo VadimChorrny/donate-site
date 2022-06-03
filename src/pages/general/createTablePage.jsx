@@ -26,7 +26,7 @@ export default function CreateTablePage() {
   return (
     <div className="container">
       <Header />
-      <Form onFinish={onFinish} className="form-container">
+      <Form onFinish={onFinish} onFinishFailed={onFinishFailed} className="form-container">
         <Form.Item name="name">
           <Input placeholder="Name" />
         </Form.Item>
@@ -54,8 +54,9 @@ export default function CreateTablePage() {
               action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
               listType="picture"
               maxCount={1}
+              
             >
-              <Button icon={<UploadOutlined />}>Upload (Max: 1)</Button>
+              <Button icon={<UploadOutlined />} id="upload-btn">Upload (Max: 1)</Button>
             </Upload>
           </Space>
         </Form.Item>

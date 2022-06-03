@@ -10,7 +10,7 @@ export function createTable(history, values) {
         image: values.image,
         price: values.price,
         isActive: true,
-        authorId: 'f4c68de3-08d4-4fb1-bc75-ec71f1a150c8',
+        authorId: UserService.getCurrentUserId(),
     };
 
     console.log('My model in service: ', model)

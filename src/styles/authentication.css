@@ -1,6 +1,9 @@
 .authBody {
     height: 100vh;
     overflow-x: hidden;
+    background-image: url('https://img.freepik.com/free-vector/composed-particles-swirling-abstract-graphics_456031-137.jpg?t=st=1654270550~exp=1654271150~hmac=c57e80be3c11678ca23c88d3d2b3a63357902bfb3c73915a0ae92e1832970243&w=1380');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .authBody .center {
@@ -10,6 +13,7 @@
     flex-direction: column;
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
 }
 
 .authBody .title {
@@ -44,21 +48,12 @@
 .authBody .passwordForm input[type="text"] {
     outline-width: 0;
     font-size: 18px;
+    width: 250px;
 }
 
 .authBody .textForm input[type="text"] {
     padding: 0px 10px;
-}
-
-.authBody .passwordInput {
-    border-radius: 10px;
-    outline-width: 0;
-    height: 40px;
-    font-size: 18px;
-    width: 280px;
-    background-color: gray;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 250px;
 }
 
 .authBody input {

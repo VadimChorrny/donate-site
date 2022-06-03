@@ -8,6 +8,8 @@ import TableInfo from "./pages/general/tableInfo";
 import MainPage from "./pages/mainPage";
 import AccountPage from "./pages/user/accountPage";
 import War from "./pages/war";
+import Wallet from './components/wallet'
+import WalletList from './pages/walletList'
 
 function App() {
     return (
@@ -20,6 +22,8 @@ function App() {
                         path="/registration"
                         component={RegistrationPage}
                     />
+                    <Route exact path="/war" component={War} />
+                    <Route exact path="/home" component={WalletList} />
                     <Route exact path="/login" component={LoginPage} />
                     <Route exact path="/news" component={War} />
                     <Route exact path="/main" component={MainPage} />

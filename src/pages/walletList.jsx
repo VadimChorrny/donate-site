@@ -2,10 +2,12 @@ import React from "react";
 import Footer from "../components/footer";
 import Wallet from "../components/wallet";
 import "../styles/walletList.css";
+import Header from '../components/header'
 
 export default function WalletList() {
     return (
         <div className="wallet-list">
+            <Header />
             <Wallet
                 name="Bitcoin"
                 walletData="357a3So9CbsNfBBgFYACGvxxS6tMaDoa1P"

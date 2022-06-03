@@ -1,8 +1,7 @@
 .albums {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 2em;
-    margin: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Grid inside grid - album cards also use grid for layout setup */
@@ -17,7 +16,8 @@
     align-items: center;
     color: white;
     font-weight: 100;
-    width: 90%;
+    width: 650px;
+    margin-top: 10px;
 }
 
 /* Important step - image will spill over the container if width is not declared explicitly */

@@ -75,18 +75,12 @@ export default function LoginPage() {
                             },
                         ]}
                     >
-                        <Input.Password
+                        <Input
+                            type='password'
                             className={"passwordInput"}
                             placeholder="Password"
                         />
                     </Form.Item>
-
-                    <div className={"helperForm"}>
-                        <Checkbox className={"checkboxForm"}>
-                            Remember me
-                        </Checkbox>
-                        <Link to="/forgotPassword" id="forgot-password">Forgot password</Link>
-                    </div>
 
                     <Form.Item className={"submitItem"}>
                         <Button
