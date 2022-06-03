@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/header";
+import { createBrowserHistory } from "history";
 import LoginPage from "./pages/authentication/loginPage";
 import RegistrationPage from "./pages/authentication/registrationPage";
 import CreateTablePage from "./pages/general/createTablePage";

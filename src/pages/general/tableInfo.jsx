@@ -6,12 +6,14 @@ import "../../styles/main/tableInfo.css";
 
 export default function TableInfo(props) {
     const { id } = useParams();
+    console.log(id);
     const [data, setData] = useState("Null");
 
     useEffect(async () => {
         const response = await tableService.getTableById(id).then((res) => {
             return res.data;
         });
+        console.log('response: ',response);
         setData(response);
     }, []);
 

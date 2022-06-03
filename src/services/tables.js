@@ -6,11 +6,14 @@ import { UserService } from "../services/userService.js";
 export function createTable(history, values) {
     var model = {
         name: values.name,
-        price: values.price,
-        image: values.image,
         describe: values.describe,
-        authorId: UserService.getCurrentUserId(),
+        image: values.image,
+        price: values.price,
+        isActive: true,
+        authorId: 'f4c68de3-08d4-4fb1-bc75-ec71f1a150c8',
     };
+
+    console.log('My model in service: ', model)
 
     tableService
         .createTable(model)

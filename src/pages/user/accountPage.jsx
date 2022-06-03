@@ -5,6 +5,8 @@ export default function AccountPage() {
     const [email, setEmail] = useState("nothing");
 
     useEffect(() => {
+        var mail = UserService.getCurrentUserEmail();
+        console.log('My mail: ',mail);
         setEmail(UserService.getCurrentUserEmail());
     });
 

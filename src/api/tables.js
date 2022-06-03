@@ -12,6 +12,7 @@ axios.interceptors.request.use(
         return Promise.reject(error);
     }
 );
+
 const URL = `${SERVER_URL}/Table`;
 
 export default class tableService {

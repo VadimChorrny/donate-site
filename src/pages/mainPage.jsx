@@ -32,9 +32,10 @@ export default function MainPage() {
             <Header />
             <div className="wrapper">
                 <h1>That's main page</h1>
-                {table.map((elem) => (
+                {table.map((elem,idx) => (
                     <Table
-                        id={elem.id}
+                        key={idx}
+                        id={idx + 1}
                         name={elem.name}
                         price={elem.price}
                         image={elem.image}
